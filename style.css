@@ -1,0 +1,62 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin, padding and default heading behaviours*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+  }
+  
+  body {
+    /*  Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+  }
+  
+  /* Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  Font-family: inherit;
+  }
+  
+  /* Prevent font size inflation */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  html, body {
+  height: 100%;
+  overflow: hidden;
+  }
+  :root {
+
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .website__main-image {
+    grid-column: 2;
+    place-self: end;
+  }
+  .website__text-section {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  

@@ -7,17 +7,30 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
+<script defer src="main.js"></script>
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-
+<main class="website__container">
+  <section class="website__main-image">
+    <picture class="main-image__hero-responsive">
+      <source srcset="/images/hero-desktop.jpg" media="(min-width: 1100px)">
+      <img src="/images/hero-mobile.jpg" alt="Decorative image of a woman" class="hero__mobile">
+    </picture>
+  </section>
+  <section class="website__text-section">
+    <section class="website__main-conatiner">
+      <img src="/images/logo.svg" alt="Base Apparel logo" class="website__main-logo">
+    </section>
+    <h1 class="text-section__main-title">We're coming soon</h1>
+    <p class="text-section__main-caption">
+      Hello fellow shoppers! We're currently building our new fashion store.
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+    <form action="">
+      <input type="email" required placeholder="Email Address" aria-label="Enter your Email"></input>
+      <button></button>
+    </form>
+  </section>
+</main>
 </body>
 </html>
